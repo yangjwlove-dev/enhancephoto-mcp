@@ -18,20 +18,35 @@ Runs 100% locally via `sharp` — no API keys, no cloud uploads, no external net
 
 ## Quick Start
 
-### Claude Desktop / Cursor / Windsurf
+### Option 1: Install MCPB Bundle (Claude Desktop)
 
-Add to your MCP client configuration (for example `claude_desktop_config.json` or `.cursor/mcp.json`):
+Download `enhancephoto-mcp-0.1.0.mcpb` from [GitHub Releases](https://github.com/yangjwlove-dev/enhancephoto-mcp/releases/tag/v0.1.0) and open it with Claude Desktop (or any MCPB-compatible MCP client).
+
+### Option 2: Run from Source (Claude Desktop / Cursor / Windsurf)
+
+Clone and build locally:
+
+```bash
+git clone https://github.com/yangjwlove-dev/enhancephoto-mcp.git
+cd enhancephoto-mcp
+pnpm install
+pnpm build
+```
+
+Then add to your MCP client configuration (for example `claude_desktop_config.json` or `.cursor/mcp.json`):
 
 ```json
 {
   "mcpServers": {
     "enhancephoto-mcp": {
-      "command": "npx",
-      "args": ["-y", "enhancephoto-mcp"]
+      "command": "node",
+      "args": ["/absolute/path/to/enhancephoto-mcp/dist/cli.js"]
     }
   }
 }
 ```
+
+> *Note: `npx` / npm registry installation is planned for an upcoming release.*
 
 ### Example Prompts
 

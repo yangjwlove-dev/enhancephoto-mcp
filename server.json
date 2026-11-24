@@ -11,11 +11,9 @@
   "version": "0.1.0",
   "packages": [
     {
-      "registryType": "npm",
-      "registryBaseUrl": "https://registry.npmjs.org",
-      "identifier": "enhancephoto-mcp",
-      "version": "0.1.0",
-      "runtimeHint": "npx",
+      "registryType": "mcpb",
+      "identifier": "https://github.com/yangjwlove-dev/enhancephoto-mcp/releases/download/v0.1.0/enhancephoto-mcp-0.1.0.mcpb",
+      "fileSha256": "fd870d80995b6228995ae52d649dd646d59db3a04e9fba2bc5cbeda706505c8e",
       "transport": {
         "type": "stdio"
       }

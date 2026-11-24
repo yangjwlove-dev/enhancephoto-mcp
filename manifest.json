@@ -1,0 +1,60 @@
+{
+  "manifest_version": "0.2",
+  "name": "enhancephoto-mcp",
+  "display_name": "EnhancePhoto Image Prep MCP",
+  "version": "0.1.0",
+  "description": "Local MCP server for image metadata inspection, print DPI sizing, quality diagnostics, pixel-art integer upscaling, and web export.",
+  "author": {
+    "name": "EnhancePhoto",
+    "url": "https://enhancephoto.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yangjwlove-dev/enhancephoto-mcp"
+  },
+  "homepage": "https://enhancephoto.org",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "image",
+    "sharp",
+    "exif",
+    "dpi",
+    "print-sizing",
+    "pixel-art",
+    "image-diagnostics"
+  ],
+  "server": {
+    "type": "node",
+    "entry_point": "dist/cli.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/dist/cli.js"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "inspect_image",
+      "description": "Reads dimensions, megapixels, aspect ratio, format, DPI, color space, alpha channel, file size, and EXIF camera metadata."
+    },
+    {
+      "name": "calculate_print_size",
+      "description": "Computes target pixel size, effective DPI, required upscale factor, and aspect-ratio crop warnings for print presets or custom sizes."
+    },
+    {
+      "name": "diagnose_image_quality",
+      "description": "Measures edge sharpness, resolution adequacy, JPEG compression density, exposure clipping, and pixel-art characteristics."
+    },
+    {
+      "name": "upscale_pixel_art",
+      "description": "Losslessly upscales sprites and pixel art by an integer factor (2x-8x) using nearest-neighbor interpolation."
+    },
+    {
+      "name": "prepare_for_web",
+      "description": "Resizes without enlargement, strips EXIF metadata by default, and exports to WebP, AVIF, JPEG, or PNG."
+    }
+  ]
+}
