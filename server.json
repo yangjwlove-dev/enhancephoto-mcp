@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.yangjwlove-dev/enhancephoto-mcp",
+  "title": "EnhancePhoto Image Prep MCP",
+  "description": "Local image inspection, print DPI sizing, quality diagnostics, and integer pixel-art upscaling.",
+  "websiteUrl": "https://enhancephoto.org",
+  "repository": {
+    "url": "https://github.com/yangjwlove-dev/enhancephoto-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "enhancephoto-mcp",
+      "version": "0.1.0",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
