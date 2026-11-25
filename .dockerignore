@@ -1,0 +1,10 @@
+node_modules
+dist
+.git
+.gitignore
+tmp
+tests
+coverage
+*.mcpb
+*.log
+.DS_Store

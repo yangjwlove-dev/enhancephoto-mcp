@@ -48,6 +48,12 @@ Then add to your MCP client configuration (for example `claude_desktop_config.js
 
 > *Note: `npx` / npm registry installation is planned for an upcoming release.*
 
+### Option 3: Run with Docker (stdio)
+
+```bash
+docker build -t enhancephoto-mcp . && docker run -i --rm -v "$(pwd):/data" enhancephoto-mcp
+```
+
 ### Example Prompts
 
 - *"Inspect `./photo.jpg` and tell me if it can be printed at 8×10 inches at 300 DPI."*
