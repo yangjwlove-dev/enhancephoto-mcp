@@ -1,5 +1,7 @@
 # enhancephoto-mcp
 
+[![EnhancePhoto Image Prep MCP server](https://glama.ai/mcp/servers/yangjwlove-dev/enhancephoto-mcp/badges/card.svg)](https://glama.ai/mcp/servers/yangjwlove-dev/enhancephoto-mcp)
+
 A local, offline [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server for image inspection, print DPI calculation, quality diagnostics, integer pixel-art upscaling, and web image optimization.
 
 Runs 100% locally via `sharp` — no API keys, no cloud uploads, no external network calls.
@@ -74,6 +76,12 @@ Test over stdio directly with MCP Inspector:
 ```bash
 npx @modelcontextprotocol/inspector node dist/cli.js
 ```
+
+## Registries & Directories
+
+- **Official MCP Registry**: `io.github.yangjwlove-dev/enhancephoto-mcp` (via `server.json`)
+- **Glama**: [glama.ai/mcp/servers/yangjwlove-dev/enhancephoto-mcp](https://glama.ai/mcp/servers/yangjwlove-dev/enhancephoto-mcp)
+- **mcpservers.org**: [mcpservers.org/servers/yangjwlove-dev/enhancephoto-mcp](https://mcpservers.org/servers/yangjwlove-dev/enhancephoto-mcp)
 
 ## Privacy & Security
 
